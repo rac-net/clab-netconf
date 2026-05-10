@@ -1,0 +1,16 @@
+---
+- name: Netconf Test
+  hosts: routers
+  strategy: free
+
+  connection: ansible.netcommon.netconf
+  gather_facts: No
+
+  roles: 
+  - role: c_baseconfig
+    tag: Base
+    when: inventory_hostname in groups["cisco"]  
+  - role: n_baseconfig
+    tag: Base
+    when: inventory_hostname in groups["nokia"]   
+             
