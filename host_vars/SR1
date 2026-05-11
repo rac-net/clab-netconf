@@ -28,7 +28,7 @@ acs:
   address: 10.1.11.1
   prefix: 24
   state: true
-ospf:
+igp:
   sid: 1
   int:
   - name: SR3

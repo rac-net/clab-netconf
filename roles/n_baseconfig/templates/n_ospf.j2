@@ -23,12 +23,12 @@
                 <interface>
                     <interface-name>system</interface-name>
                     <node-sid>
-                        <index>{{ospf.sid}}</index>
+                        <index>{{igp.sid}}</index>
                     </node-sid>
                 </interface>
-{% for oint in ospf.int %}
+{% for intf in igp.int %}
                 <interface>
-                    <interface-name>{{oint.name}}</interface-name>
+                    <interface-name>{{intf.name}}</interface-name>
                     <interface-type>point-to-point</interface-type>
                 </interface>
 {% endfor %}

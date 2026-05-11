@@ -35,7 +35,7 @@ net:
   address: 10.3.6.3
   prefix: 24
   state: true
-ospf:
+igp:
   sid: 3
   int:
   - name: SR1

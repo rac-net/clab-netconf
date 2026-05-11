@@ -26,7 +26,8 @@ net:
   address: 10.4.5.4
   mask: 255.255.255.0
   state: true
-ospf:
+igp:
+  net: 49.0001.0100.0400.4004.00
   id: 10.4.4.4
   sid: 4
   int:

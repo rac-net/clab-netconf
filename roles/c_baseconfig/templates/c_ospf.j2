@@ -28,11 +28,11 @@
           <interface-name>Loopback0</interface-name>
           <prefix-sid>
            <index>
-            <sid-index>{{ospf.sid}}</sid-index>
+            <sid-index>{{igp.sid}}</sid-index>
            </index>
           </prefix-sid>
          </interface>
-{% for intf in ospf.int %}         
+{% for intf in igp.int %}         
          <interface>
           <interface-name>GigabitEthernet{{intf.name}}</interface-name>
           <network>
